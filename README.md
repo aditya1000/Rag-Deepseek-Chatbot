@@ -30,8 +30,8 @@ Users can **upload PDF/CSV documents** or a **pre-vectorized file**, then **ask 
 
 ### 1. Clone or download this repository
 ```bash
-git clone https://github.com/your-username/ollama-rag-chatbot.git
-cd ollama-rag-chatbot
+git clone https://github.com/aditya1000/Rag-Deepseek-Chatbot.git
+cd Rag-Deepseek-Chatbot
 ```
 
 
