@@ -1,4 +1,4 @@
-# RAG Chatbot for talking with your documents
+# RAG Chatbot: talk to your documents using lastest Deepseek model
 
 This repository demonstrates how to build a **Retrieval-Augmented Generation (RAG)** chatbot using:
 
