@@ -125,7 +125,7 @@ with st.sidebar:
             index = VectorStoreIndex.from_documents(
                 docs,
                 llm = my_llm,
-                embed_modek = Settings.embed_model,
+                embed_model = Settings.embed_model,
                 show_progress=True
             )
 
