@@ -20,6 +20,7 @@ Users can **upload PDF/CSV documents** or a **pre-vectorized file**, then **ask 
 - **Interactive Streamlit UI**: Chat messages appear in a neat conversation-style interface, with a text input to query.
 
 ---
+![](Demo.gif)
 
 ## Prerequisites
 
