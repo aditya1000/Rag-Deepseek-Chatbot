@@ -26,7 +26,7 @@ Settings.embed_model = HuggingFaceEmbedding(
 
 #my_llm = OllamaLLM(model_name="llama2")
 
-my_llm = Ollama(model="deepseek-r1:7b")  # or your preferred model
+my_llm = Ollama(model="deepseek-r1:7b", request_timeout=500)  # or your preferred model
 # ---------------------------------------
 # Streamlit App
 # ---------------------------------------
