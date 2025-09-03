@@ -15,18 +15,32 @@ from llama_index.core import Settings
 from llama_index.core.llms import ChatMessage
 
 # ---------------------------------------
-# Set up the Ollama, LLM and embedding settings
+# Model selection for retriever
 # ---------------------------------------
 
+MODEL_OPTIONS = {
+    "Gemma 3B": "gemma3:270m",
+    "Mistral 7B": "mistral:7b",
+    "Deepseek V2 7B": "deepseek-v2:7b"
+}
+
+with st.sidebar:
+    st.header("Add your documents!")
+    selected_model = st.selectbox(
+        "Choose Retriever Model",
+        list(MODEL_OPTIONS.keys()),
+        index=0
+    )
+
+# Set up the Ollama, LLM and embedding settings
 Settings.embed_model = HuggingFaceEmbedding(
     model_name="BAAI/bge-small-en-v1.5",
     trust_remote_code=True,
     device="cuda" if torch.cuda.is_available() else "cpu"
 )
 
-#my_llm = OllamaLLM(model_name="llama2")
+my_llm = Ollama(model=MODEL_OPTIONS[selected_model], request_timeout=500)
 
-my_llm = Ollama(model="deepseek-r1:7b", request_timeout=500)  # or your preferred model
 # ---------------------------------------
 # Streamlit App
 # ---------------------------------------
