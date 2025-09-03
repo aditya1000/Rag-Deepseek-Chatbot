@@ -19,9 +19,9 @@ from llama_index.core.llms import ChatMessage
 # ---------------------------------------
 
 MODEL_OPTIONS = {
-    "Gemma 3B": "gemma3:270m",
-    "Mistral 7B": "mistral:7b",
-    "Deepseek V2 7B": "deepseek-v2:7b"
+    "Gemma 3B": "gemma3:27b",
+    "Qwen 2": "qwen2:latest",
+    "Deepseek V2 7B": "deepseek-v2:latest"
 }
 
 with st.sidebar:
