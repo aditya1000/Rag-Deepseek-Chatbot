@@ -76,7 +76,9 @@ where ollama  # Windows: should show the path to Ollama binary
 
 #### Then, pull the required model:
 ```bash
-ollama pull deepseek-r1:7b
+ollama pull deepseek-v2:latest
+ollama pull gemma3:27b
+ollama pull qwen2:latest
 ```
 
 If you see an error, double-check your Homebrew installation and PATH settings.
